@@ -178,6 +178,7 @@ CLAUDE.md
 
 # Gemini AI Configuration
 .gemini/
+GEMINI.md
 
 # Project Snapshots (auto-generated)
 _scripts/snapshot*
