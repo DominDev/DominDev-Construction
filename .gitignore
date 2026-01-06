@@ -69,6 +69,12 @@ web_modules/
 .env
 .env.*
 !.env.example
+.env.local
+.env.*.local
+
+# Secrets
+*.pem
+*.key
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -137,3 +143,41 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+#  Build / Generated
+dist/
+build/
+*.min.css
+*.min.js
+!src/css/style.min.css
+!src/js/main.min.js
+
+# IDE / Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Python (if using scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+
+# Project Internal Docs (technical notes, not for production)
+_docs/
+
+# Claude AI Configuration
+.claude/
+
+# Gemini AI Configuration
+.gemini/
+
+# Project Snapshots (auto-generated)
+_scripts/snapshot*
+_project_snapshots/
