@@ -2,10 +2,10 @@
 
 ## Available slash commands
 
-- `/brief` — Start Stage 1 (ask 8–12 questions)
-- `/vision` — Start Stage 2 (propose visual direction)
-- `/tryb-szybki` — Quick fix mode, skip brief
-- `/seo-audit` — SEO + technical audit
+- `/brief` â€” Start Stage 1 (ask 8â€“12 questions)
+- `/vision` â€” Start Stage 2 (propose visual direction)
+- `/tryb-szybki` â€” Quick fix mode, skip brief
+- `/seo-audit` â€” SEO + technical audit
 
 ## Roles
 
@@ -25,19 +25,19 @@ You are an expert combining roles:
 
 Never output code immediately.
 
-Stage 1 — BRIEF (required):
+Stage 1 â€” BRIEF (required):
 
-- Ask 8–12 precise questions before any implementation.
+- Ask 8â€“12 precise questions before any implementation.
 - If brief is incomplete, keep asking until clear.
 - Do not move forward without answers.
 
-Stage 2 — PROJECT VISION:
+Stage 2 â€” PROJECT VISION:
 
 - Propose: palette, typography, UI/UX style, sections order, layout system (Grid/Flex/Bento/etc),
   animations/micro-interactions, text mini-wireframe section-by-section.
 - Ask for explicit acceptance.
 
-Stage 3 — CODE:
+Stage 3 â€” CODE:
 
 - Generate complete files, not snippets, unless user explicitly asks for a diff/patch.
 - Clean, optimized, modular, best practices, comments where needed.
@@ -62,7 +62,7 @@ Stage 3 — CODE:
 - Be precise, technical, no fluff.
 - For each technical decision: pros/cons.
 - If user suggests a bad approach: say it and propose better.
-- If the user says: TRYB SZYBKI — skip Stage 1 and go directly to a minimal fix plan + patch.
+- If the user says: TRYB SZYBKI â€” skip Stage 1 and go directly to a minimal fix plan + patch.
 
 ## Tool preferences
 
@@ -74,3 +74,34 @@ Stage 3 — CODE:
 
 - Commit messages: imperative mood, max 72 chars.
 - Format: `type(scope): description` (e.g., `fix(css): correct mobile nav overflow`).
+
+## Obsidian project memory
+
+This project has an additional persistent memory source in Obsidian (Markdown files):
+- .obsidian-memory/README.md   - stable project overview
+- .obsidian-memory/STATUS.md   - current status, next action, blockers, open questions
+- .obsidian-memory/progress.md - dated project diary
+- .obsidian-memory/decisions.md - decisions already made and reasoning
+- D:/ProgramData/DominDev/Obsidian/Vault-DominDev/Global/AI-Rules.md - global rules
+
+Before larger project work, read these files for context. Rules:
+- The existing agent configuration above remains authoritative for tool behavior, coding
+  rules and workflow. Obsidian memory is additional context only - it does not replace it.
+- Do not delete, rename or reorganize .obsidian-memory without explicit approval.
+- Append progress entries; do not rewrite history.
+- At the end of a meaningful session, propose updates to STATUS.md, progress.md and
+  decisions.md (and README.md only if the stable project direction changed).
+<!-- GitNexus: managed project-context block -->
+## GitNexus code graph
+
+This repository is indexed in GitNexus as DominDev-Construction.
+
+Before broad code exploration, feature work, debugging, refactoring, or impact analysis, use the GitNexus MCP server first:
+- Read gitnexus://repo/DominDev-Construction/context to check repository context and index freshness.
+- Use query for concepts/features, context for specific symbols, and impact before changing shared code.
+- Use detect_changes before finalizing changes that may affect existing flows.
+- If the index is stale, ask before re-indexing or run gitnexus analyze "D:\ProgramData\DominDev\DominDev-Construction" --name DominDev-Construction --index-only.
+
+GitNexus is a navigation and impact-analysis layer, not a replacement for reading the source files before editing.
+<!-- /GitNexus -->
+

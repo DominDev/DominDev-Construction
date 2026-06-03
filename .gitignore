@@ -183,3 +183,5 @@ GEMINI.md
 # Project Snapshots (auto-generated)
 _scripts/snapshot*
 _project_snapshots/
+# Local Obsidian AI memory junction
+.obsidian-memory/
